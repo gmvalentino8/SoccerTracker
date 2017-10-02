@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.valentino.myfirstapp.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#000000">
+
+            <TextView android:id="@+id/curr_game"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/abc_text_size_display_1_material"
+                android:textStyle="normal|bold"
+                android:textColor="#FFFFFF" />
+
+            <Button android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Team Scores"
+                    android:textSize="@dimen/abc_text_size_display_1_material"
+                    android:background="#bababa"
+                    android:textStyle="normal|bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#C5E0B3">
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Home"
+                    android:textSize="@dimen/abc_text_size_large_material"
+                    android:textStyle="bold" />
+
+                <Button android:id="@+id/minus_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="–"
+                    android:textSize="@dimen/abc_text_size_large_material"
+                    android:textStyle="bold" />
+
+                <TextView android:id="@+id/text_home"
+                    android:layout_width="128px"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/abc_text_size_large_material"
+                    android:textStyle="bold" />
+
+                <Button android:id="@+id/plus_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textSize="@dimen/abc_text_size_large_material"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#f7acac">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Away"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <Button android:id="@+id/minus_away"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="–"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/text_away"
+                android:layout_width="128px"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <Button android:id="@+id/plus_away"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Player Statistics"
+                android:textSize="@dimen/abc_text_size_display_1_material"
+                android:background="#bababa"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#A6B9E1">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Goals"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <Button android:id="@+id/minus_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="–"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/text_goal"
+                android:layout_width="128px"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <Button android:id="@+id/plus_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#D0DAEF">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Shots"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <Button android:id="@+id/minus_shot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="–"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/text_shot"
+                android:layout_width="128px"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <Button android:id="@+id/plus_shot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#A6B9E1">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Assist"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <Button android:id="@+id/minus_assist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="–"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/text_assist"
+                android:layout_width="128px"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <Button android:id="@+id/plus_assist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#D0DAEF">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Saves"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <Button android:id="@+id/minus_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="–"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/text_save"
+                android:layout_width="128px"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <Button android:id="@+id/plus_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#A6B9E1">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fouls"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <Button android:id="@+id/minus_foul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="–"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/text_foul"
+                android:layout_width="128px"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <Button android:id="@+id/plus_foul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#D0DAEF">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tackles"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <Button android:id="@+id/minus_tackle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="–"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/text_tackle"
+                android:layout_width="128px"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <Button android:id="@+id/plus_tackle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="#A6B9E1">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Passes"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <Button android:id="@+id/minus_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="–"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/text_pass"
+                android:layout_width="128px"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <Button android:id="@+id/plus_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

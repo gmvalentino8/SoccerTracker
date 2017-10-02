@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.valentino.myfirstapp.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="Statistics Summary"
+            android:textSize="20dip"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:text=""
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_weight="1"/>
+"
+        <TextView
+            android:text="Home: "
+            android:textSize="20dip"
+            android:textColor="#2ba609"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView android:id="@+id/text_home"
+            android:textSize="20dip"
+            android:textAlignment="center"
+            android:layout_width="128px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Away: "
+            android:textSize="20dip"
+            android:textColor="#a61917"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <TextView android:id="@+id/text_away"
+            android:textSize="20dip"
+            android:textAlignment="center"
+            android:layout_width="128px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text=""
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_weight="1"/>
+
+        <Button android:id="@+id/send_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/landscape"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:useDefaultMargins="true"
+        android:alignmentMode="alignBounds"
+
+        android:columnCount="4"
+        android:rowCount="12"
+        >
+
+        <!-- First Row -->
+
+        <!-- Table headers -->
+        <TextView
+            android:text=" "
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+
+        <TextView
+            android:text="Current Match"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+
+        <TextView
+            android:text="Lifetime Average"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="1"
+            android:layout_column="2" />
+
+        <TextView
+            android:text="Performance (%)"
+            android:textSize="16dip"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="1"
+            android:layout_column="3" />
+
+        <!-- Column 0 -->
+        <TextView
+            android:text="Goals"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="2"
+            android:layout_column="0" />
+
+        <TextView
+            android:text="Shots"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="3"
+            android:layout_column="0" />
+
+        <TextView
+            android:text="Assists"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="4"
+            android:layout_column="0" />
+
+        <TextView
+            android:text="Saves"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="5"
+            android:layout_column="0" />
+
+        <TextView
+            android:text="Fouls"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="6"
+            android:layout_column="0" />
+
+        <TextView
+            android:text="Tackles"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="7"
+            android:layout_column="0" />
+
+        <TextView
+            android:text="Passes"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="8"
+            android:layout_column="0" />
+
+        <!-- Column 1 -->
+        <TextView android:id="@+id/text_goal"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="2"
+            android:layout_column="1" />
+
+        <TextView android:id="@+id/text_shot"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="3"
+            android:layout_column="1" />
+
+        <TextView android:id="@+id/text_assist"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="4"
+            android:layout_column="1" />
+
+        <TextView android:id="@+id/text_save"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="5"
+            android:layout_column="1" />
+
+        <TextView android:id="@+id/text_foul"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="6"
+            android:layout_column="1" />
+
+        <TextView android:id="@+id/text_tackle"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="7"
+            android:layout_column="1" />
+
+        <TextView android:id="@+id/text_pass"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="8"
+            android:layout_column="1" />
+
+        <!-- Column 2 -->
+        <TextView android:id="@+id/avg_goal"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="2"
+            android:layout_column="2" />
+
+        <TextView android:id="@+id/avg_shot"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="3"
+            android:layout_column="2" />
+
+        <TextView android:id="@+id/avg_assist"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="4"
+            android:layout_column="2" />
+
+        <TextView android:id="@+id/avg_save"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="5"
+            android:layout_column="2" />
+
+        <TextView android:id="@+id/avg_foul"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="6"
+            android:layout_column="2" />
+
+        <TextView android:id="@+id/avg_tackle"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="7"
+            android:layout_column="2" />
+
+        <TextView android:id="@+id/avg_pass"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="8"
+            android:layout_column="2" />
+        <!-- Column 3 -->
+        <TextView android:id="@+id/perf_goal"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="2"
+            android:layout_column="3" />
+
+        <TextView android:id="@+id/perf_shot"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="3"
+            android:layout_column="3" />
+
+        <TextView android:id="@+id/perf_assist"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="4"
+            android:layout_column="3" />
+
+        <TextView android:id="@+id/perf_save"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="5"
+            android:layout_column="3" />
+
+        <TextView android:id="@+id/perf_foul"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="6"
+            android:layout_column="3" />
+
+        <TextView android:id="@+id/perf_tackle"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="7"
+            android:layout_column="3" />
+
+        <TextView android:id="@+id/perf_pass"
+            android:textSize="16dip"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left"
+            android:layout_row="8"
+            android:layout_column="3" />
+
+
+    </GridLayout>
+
+</LinearLayout>
